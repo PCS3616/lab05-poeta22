@@ -4,14 +4,14 @@ START   LD N
 	MM RES
 	LD N 
 	SB CONS
-	MM VAL
+	MM N
 	JP START
 	
-@ HALT
-        HM 000
+@ /0050
+HALT	HM /000
 
 @ /0100
-N 	K = 5
-RES	K = 1
-CONS	K = 1
+N 	K =5
+RES	K =1
+CONS	K =1
 
