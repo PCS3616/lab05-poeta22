@@ -1,18 +1,17 @@
-@ /0000
-START   LD VAL
-	JZ RETURN
+START   LD N
+	JZ HALT
 	ML RES
 	MM RES
-	LD VAL 
+	LD N 
 	SB CONS
 	MM VAL
 	JP START
 	
-
-@ /0050
-RETURN	HM
+@ HALT
+        HM 000
 
 @ /0100
-VAL 	K = 5
+N 	K = 5
 RES	K = 1
 CONS	K = 1
+
